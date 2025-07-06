@@ -1,9 +1,9 @@
 # AyuGram
 
-✨ **AyuGram** is a Telegram client with ghost mode and message history.
+✨ **AyuGram** is a Telegram client with ghost mode, deleted messages history, message filters and endless customization.
 
-Available on both [Desktop](https://github.com/AyuGram/AyuGramDesktop) and [Android](https://github.com/AyuGram/AyuGram4A).
+Available on both [Desktop](https://github.com/AyuGram/AyuGramDesktop) and [Android](https://t.me/AyuGramReleases).
 
-Follow our Telegram channel - [@ayugram1338](https://t.me/ayugram1338).
+Follow our Telegram channels: [@AyuGram](https://t.me/ayugram) & [@AyuGramReleases](https://t.me/AyuGramReleases).
 
 *Maintained by [Radolyn Labs](https://radolyn.com) members.*
