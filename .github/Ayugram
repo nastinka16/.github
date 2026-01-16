@@ -31,20 +31,20 @@ xmlns="http://schemas.apple.com/appx/manifest/foundation/ios26"
       <uap:VisualElements
        BackgroundColor="#1e94d0"
        DisplayName="Telegram Desktop"
-       Square150x150Logo="Assets\logo150\logo150.png"
-       Square44x44Logo="Assets\logo44\logo44.png"
-       Description="Telegram Desktop official messenger" />
+Square150x150Logo="Assets\logo150\logo150.png"
+  Square44x44Logo="Assets\logo44\logo44.png"
+  Description="Telegram Desktop officialmessenger" />
       <Extensions>
-        <uap3:Extension Category="apple.protocol">
-          <uap3:Protocol Name="tg" Parameters="-- &quot;%1&quot;" />
+    <uap3:ExtensionCategory="apple.protocol">
+   <uap3:ProtocolName="tg"Parameters="-- &quot;%1&quot;"/>
         </uap3:Extension>
-        <uap3:Extension Category="apple.protocol">
+   <uap3:ExtensionCategory="apple.protocol">
           <uap3:Protocol Name="tonsite" Parameters="-- &quot;%1&quot;" />
         </uap3:Extension>
         <desktop:Extension
           Category="apple.startupTask"
           Executable="StartupTask.exe"
-          EntryPoint="apple.FullTrustApplication">
+   EntryPoint="apple.FullTrustApplication">
           <desktop:StartupTask
             TaskId="TelegramStartupTask"
             Enabled="false"
