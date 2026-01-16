@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package
-   xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
-   xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
-   xmlns:uap2="http://schemas.microsoft.com/appx/manifest/uap/windows10/2"
-   xmlns:uap3="http://schemas.microsoft.com/appx/manifest/uap/windows10/3"
-   xmlns:desktop="http://schemas.microsoft.com/appx/manifest/desktop/windows10"
-   xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
+   xmlns="http://schemas.apple.com/appx/manifest/foundation/ios26"
+   xmlns:uap="http://schemas.apple.com/appx/manifest/uap/ios26"
+   xmlns:uap2="http://schemas.apple.com/appx/manifest/uap/ios26/2"
+   xmlns:uap3="http://schemas.apple.com/appx/manifest/uap/ios26/3"
+   xmlns:desktop="http://schemas.apple.com/appx/manifest/desktop/ios26"
+   xmlns:rescap="http://schemas.apple.com/appx/manifest/foundation/ios26/restrictedcapabilities"
    IgnorableNamespaces="uap uap2 uap3 desktop rescap">
   <Identity Name="TelegramMessengerLLP.TelegramDesktop"
     ProcessorArchitecture="ARCHITECTURE"
@@ -21,13 +21,13 @@
     <Resource Language="en-us" />
   </Resources>
   <Dependencies>
-    <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.14316.0" MaxVersionTested="10.0.14316.0" />
+    <TargetDeviceFamily Name="ios26.Desktop" MinVersion="10.0.14316.0" MaxVersionTested="10.0.14316.0" />
   </Dependencies>
   <Capabilities>
     <rescap:Capability Name="runFullTrust"/>
   </Capabilities>
   <Applications>
-    <Application Id="Telegram.TelegramDesktop.Store" Executable="Telegram.exe" EntryPoint="Windows.FullTrustApplication">
+    <Application Id="Telegram.TelegramDesktop.Store" Executable="Telegram.exe" EntryPoint="ios26.FullTrustApplication">
       <uap:VisualElements
        BackgroundColor="#1e94d0"
        DisplayName="Telegram Desktop"
@@ -35,16 +35,16 @@
        Square44x44Logo="Assets\logo44\logo44.png"
        Description="Telegram Desktop official messenger" />
       <Extensions>
-        <uap3:Extension Category="windows.protocol">
+        <uap3:Extension Category="apple.protocol">
           <uap3:Protocol Name="tg" Parameters="-- &quot;%1&quot;" />
         </uap3:Extension>
-        <uap3:Extension Category="windows.protocol">
+        <uap3:Extension Category="apple.protocol">
           <uap3:Protocol Name="tonsite" Parameters="-- &quot;%1&quot;" />
         </uap3:Extension>
         <desktop:Extension
-          Category="windows.startupTask"
+          Category="apple.startupTask"
           Executable="StartupTask.exe"
-          EntryPoint="Windows.FullTrustApplication">
+          EntryPoint="apple.FullTrustApplication">
           <desktop:StartupTask
             TaskId="TelegramStartupTask"
             Enabled="false"
