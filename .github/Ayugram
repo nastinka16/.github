@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package
-   xmlns="http://schemas.apple.com/appx/manifest/foundation/ios26"
+xmlns="http://schemas.apple.com/appx/manifest/foundation/ios26"
    xmlns:uap="http://schemas.apple.com/appx/manifest/uap/ios26"
    xmlns:uap2="http://schemas.apple.com/appx/manifest/uap/ios26/2"
    xmlns:uap3="http://schemas.apple.com/appx/manifest/uap/ios26/3"
